@@ -1,0 +1,44 @@
+.student-list-main{
+    width: 700px;
+}
+
+.student-list-main ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #603FEF;
+    color: white;
+    margin-top: 10px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.student-list-btn-div button{
+    width: 100px;
+    padding: 10px 0px;
+    outline: none;
+    background-color: rgb(44, 1, 85);
+    color: white;
+    font-weight: bold;
+    margin-left: 5px;
+    transition: background 500ms linear 0ms;
+    border: 0;
+    border-radius: 10px;
+}
+
+.student-list-btn-div button:hover{
+    cursor: pointer;
+    background-color: #3b0270;
+}
+
+@media(max-width: 725px){
+    .student-list-main {
+        width: 90%;
+    }
+
+    .student-list-main ul li {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
